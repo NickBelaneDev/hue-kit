@@ -1,0 +1,18 @@
+8) Hue v2 Endpunkte (Kurz-Referenz)
+
+Listen:
+    GET /clip/v2/resource/light
+    GET /clip/v2/resource/room
+    GET /clip/v2/resource/zone
+    GET /clip/v2/resource/grouped_light
+
+Steuern:
+    Gruppe: PUT /clip/v2/resource/grouped_light/{id}
+
+        {"on":{"on":true}}
+        {"dimming":{"brightness": 35.0}}
+        {"color_temperature":{"mirek": 250}}
+        {"color":{"xy":{"x":0.35,"y":0.35}}}
+
+Einzellampe: PUT /clip/v2/resource/light/{id} (gleiches Schema)
+
