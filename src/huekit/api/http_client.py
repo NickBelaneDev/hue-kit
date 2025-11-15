@@ -1,3 +1,5 @@
+import requests
+
 class HttpClient:
     def __init__(self, base_url: str, headers: dict[str, str]):
         self.session = requests.Session()
